@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab_3_Auccout</title>
+  <link href="stylesheet/sty.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="Accout" class="accout">
+  <div class="container">
+    <form action="" id="account_form" class="">
+      <h1 class="text_head1"> Account</h1>
+      <div class="form_group">
+        <img class="logo_person" src="image/person-fill%20.svg">
+        <input type="text" name="full_name" id="name" placeholder="Full Name" class="pix_text">
+      </div>
+      <div class="form_group">
+        <img class="logo_envelope" src="image/envelope-fill.svg">
+        <input type="email" name="email" id="email" placeholder="Email" class="pix_text">
+      </div>
+      <div class="form_group">
+        <img class="logo_key" src="image/key-fill.svg">
+        <input type="password" name="password" id="password" placeholder="Password" class="pix_text">
+      </div>
+      <div class="date_birth">
+        <p class="text_header2"> Date Of Birth</p>
+        <input type="text" name="date" id="date" placeholder="DD" class="pix_date">
+        <input type="text" name="month" id="month" placeholder="MM" class="pix_date">
+        <input type="text" name="month" id="year" placeholder="YYYY" class="pix_date">
+      </div>
+      <div id="gender1" class="gender">
+        <p class="text_gender"> Gender</p>
+        <input type="radio" name="male" id="male" value="male" class="text_gender1">
+        <label for="male"> Male</label> <br>
+        <input type="radio" name="female" id="female" value="Female" class="text_gender1">
+        <label for="female"> Female</label>
+      </div>
+      <div class="payment">
+        <p class="text_pay"> Payment Details</p>
+        <div class="credit">
+          <img class="icon_credit" src="image/credit-card.svg">
+          <input type="button" name="credit" id="credit" value="Credit Card" class="pix_credit">
+          <img class="icon_paypal" src="image/paypal.svg">
+          <input type="button" name="paypal" id="paypal" value="PayPal" class="pix_credit">
+        </div>
+        <div class="card">
+          <img class="icon_card" src="image/credit-card-2-back.svg">
+          <input type="text" name="card" id="card" placeholder="Card Number" class="pix_card">
+        </div>
+        <div class="cvc">
+          <img class="icon_cvc" src="image/person-fill%20.svg">
+          <input type="text" name="card" id="cvc" placeholder="Card CVC" class="pix_cvc">
+          <input type="text" name="month" id="month_pay" placeholder="01 Jan" class="pay_month">
+          <img class="icon_down" src="image/caret-down-fill.svg">
+          <input type="text" name="year" id="year_pay" placeholder="2015" class="pay_year">
+          <img class="icon_down" src="image/caret-down-fill.svg">
+        </div>
+      </div>
+      <div class="terms_food">
+        <p class="text_terms"> Terms and Conditions</p>
+        <input type="checkbox" name="accept" id="accept" class="accept" >
+        <p class="text_food">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
