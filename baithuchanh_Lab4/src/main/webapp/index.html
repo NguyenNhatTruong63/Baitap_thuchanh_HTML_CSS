@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải Phương trình bậc 2</title>
+    <link href="access/sty.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="equation" class="">
+    <div class="container">
+        <div id="equation2">
+            <h1 class="equation_title">Giải phương trình bậc II</h1>
+            <div class="input_a">
+                <label for="value_a"> Nhập a:</label>
+                <input type="text" name="text" id="value_a" placeholder="Nhập giá trị của a">
+            </div>
+            <div class="input_b">
+                <label for="value_b"> Nhập b:</label>
+                <input type="text" name="text" id="value_b" placeholder="Nhập giá trị của b">
+            </div>
+            <div class="input_c">
+                <label for="value_c">Nhập c:</label>
+                <input type="text" name="text" id="value_c" placeholder="Nhập giá trị của c">
+            </div>
+            <div class="button_result">
+                <button id="result" onclick="giaiPhuongTrinh()" >Giải phương trình</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function giaiPhuongTrinh(){
+        var a = parseFloat(document.getElementById('value_a').value);
+        var b = parseFloat(document.getElementById('value_b').value);
+        var c = parseFloat(document.getElementById('value_c').value);
+
+        var delta = b*b - 4*a*c;
+        if (delta < 0){
+            document.getElementById('result').innerText ='Phương trình vô nghiệm'
+        }else if (delta === 0){
+            document.getElementById('result').innerText = 'Phương trình có nghiệm kép x =' + x;
+        } else{
+            var x1 = (-b + Math.sqrt(delta)) / (2*a);
+            var x2 = (-b + Math.sqrt(delta)) / (2*a);
+            document.getElementById('result').innerText = 'Phương trình có 2 nghiệm phân biệt: x1 = ' + x1 + ', x2 = ' + x2;
+        }
+    }
+</script>
+</html>

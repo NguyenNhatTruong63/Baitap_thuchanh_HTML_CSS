@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: black;
+    font-family: Tahoma;
+}
+.container{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#equation2{
+    margin-left: 50px;
+    padding-top: 10px;
+}
+.input_a{
+    margin-left: 70px;
+}
+#value_a{
+    height: 30px;
+    margin-bottom: 10px;
+}
+.input_b{
+    margin-left: 70px;
+}
+#value_b{
+    height: 30px;
+    margin-bottom: 10px;
+}
+.input_c{
+    margin-left: 70px;
+}
+#value_c{
+    height: 30px;
+    margin-bottom: 20px;
+}
+.button_result{
+    margin-left: 150px;
+}
+#result{
+    height: 40px;
+    border-radius: 10px;
+    border: solid 1px;
+}
