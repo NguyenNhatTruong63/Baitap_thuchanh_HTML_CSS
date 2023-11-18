@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 4</title>
+    <link href="access/bai4.css" rel="stylesheet">
+</head>
+<body>
+<div id="section_heard" class="#">
+    <div class="container">
+        <div class="content1">
+            <div class="textarea">
+                <textarea id="content" name="content" rows="4" cols="30"> Nhập vào đoạn văn A</textarea>
+            </div>
+            <div class="textfiel">
+                <label for="textfield">Dòng B: </label>
+                <input type="text" name="text" id="textfield">
+            </div>
+            <div class="button_res">
+                <button id="result" onclick="tinhtoan()">Kết Quả</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function tinhtoan(){
+        var textA = document.getElementById('content').value;
+        var textB = document.getElementById('textfield').value;
+        if(textA.trim() === '' || textB.trim() === ''){
+            alert("Vui lòng nhập đoạn văn bản A và B trước khi tính toán")
+            return;
+        }
+        var occurrences = (textA.match(new RegExp(textB, 'gi')) || []).length;
+        document.getElementById("result").innerHTML = "Số lần xuất hiện của dòng (B) trong đoạn văn (A): ";
+    }
+</script>
+</html>
