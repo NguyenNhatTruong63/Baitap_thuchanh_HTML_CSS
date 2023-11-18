@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Hello</title>
+    <link href="access/bai3.css" rel="stylesheet">
+</head>
+<body>
+    <div id="title" class="">
+        <div class="container">
+            <div class="content">
+                <h1 id="title_text">Welcome</h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function (){
+        var title_tex = [
+            'Welcome',
+            'chào bạn',
+            'Hello',
+            'Hi'
+        ];
+        var ramdom_title = title_tex[Math.floor(Math.random() * title_tex.length)]
+        document.getElementById('title_text').textContent = ramdom_title;
+    });
+</script>
+</html>
