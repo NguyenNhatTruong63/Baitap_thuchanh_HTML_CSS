@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #image{
+            width: 900px;
+            height: 600px;
+            margin: 150px 400px;
+            transition: transform 0.5s;
+        }
+    </style>
+</head>
+<body>
+<div id="section">
+    <div class="img">
+        <img id="image" src="access/img/senda.jpg">
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function (){
+        setTimeout(function (){
+            image()
+        }, 2000)
+        function image(){
+            $("#image").css({
+                transform : 'rotate(15deg)'
+            })
+        }
+    })
+</script>
+</html>
