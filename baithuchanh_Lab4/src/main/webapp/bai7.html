@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            font-size: 16px;
+            font-family: Tahoma,serif;
+            background-color: white;
+        }
+        button{
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function (){
+           let current = 1;
+           function handleClick(){
+               const buttonValue = parseInt($(this).text());
+               if(buttonValue === current){
+                   $(this).fadeOut(300, function (){
+                       $(this).remove()
+                       current++
+                       if(current > 64){
+                           alert("chúc mừng bạn")
+                       }
+                   });
+               }
+               else{
+                   alert("bạn đã nhấn sai")
+               }
+           }
+           for (let i = 1; i <= 64; i++){
+               const button = $('<button/>', {
+                   text: i,
+                   click: handleClick
+               });
+               $('body').append(button)
+           }
+        });
+    </script>
+</body>
+</html>
